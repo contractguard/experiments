@@ -1,0 +1,3 @@
+KittyBreeding
+line:253-     function _breedWith(uint256 _matronId, uint256 _sireId) internal {
+line:255+     function _breedWith(uint256 _matronId, uint256 _sireId) public {

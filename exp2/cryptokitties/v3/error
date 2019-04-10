@@ -1,0 +1,313 @@
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/ClockAuction.sol
+> Compiling ./contracts/ClockAuctionBase.sol
+> Compiling ./contracts/Debuggable.sol
+> Compiling ./contracts/ERC721Draft.sol
+> Compiling ./contracts/ExternalInterfaces/GeneScienceInterface.sol
+> Compiling ./contracts/GeneScienceMock.sol
+> Compiling ./contracts/KittyAccessControl.sol
+> Compiling ./contracts/KittyAuction.sol
+> Compiling ./contracts/KittyBase.sol
+> Compiling ./contracts/KittyBreeding.sol
+> Compiling ./contracts/KittyCore.sol
+> Compiling ./contracts/KittyCoreRinkeby.sol
+> Compiling ./contracts/KittyCoreTest.sol
+> Compiling ./contracts/KittyMinting.sol
+> Compiling ./contracts/KittyOwnership.sol
+> Compiling ./contracts/Migrations.sol
+> Compiling ./contracts/NonFungibleMock.sol
+> Compiling ./contracts/SaleClockAuction.sol
+> Compiling ./contracts/SiringClockAuction.sol
+
+    > compilation warnings encountered:
+
+/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuction.sol:20:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function Ownable() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuction.sol:103:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ClockAuction(address _nftAddress, uint256 _cut) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/SiringClockAuction.sol:13:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function SiringClockAuction(address _nftAddr, uint256 _cut) public
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/SaleClockAuction.sol:17:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function SaleClockAuction(address _nftAddr, uint256 _cut) public
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/KittyCore.sol:53:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function KittyCore() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/KittyCoreRinkeby.sol:9:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function KittyCoreRinkeby() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/KittyCoreTest.sol:9:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function KittyCoreTest() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/Migrations.sol:13:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function Migrations() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuctionBase.sol:89:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionCreated(
+        ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuctionBase.sol:101:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionCancelled(_tokenId);
+        ^------------------------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuctionBase.sol:152:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionSuccessful(_tokenId, price, msg.sender);
+        ^--------------------------------------------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuction.sol:80:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Pause();
+        ^-----^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuction.sol:89:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Unpause();
+        ^-------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuction.sol:123:29: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        nftAddress.transfer(this.balance);
+                            ^----------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/Debuggable.sol:10:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Logui(s, uint256(x));
+        ^------------------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/Debuggable.sol:14:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Logui(s, x);
+        ^---------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/Debuggable.sol:18:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Logi(s, x);
+        ^--------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/Debuggable.sol:26:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Logui(s, n);
+        ^---------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/KittyAccessControl.sol:87:29: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        cfoAddress.transfer(this.balance);
+                            ^----------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/KittyBase.sol:139:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _tokenId);
+        ^----------------------------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/KittyBase.sol:186:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Birth(
+        ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/KittyOwnership.sol:110:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Approval(msg.sender, _to, _tokenId);
+        ^---------------------------------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/KittyBreeding.sol:265:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Pregnant(kittyIndexToOwner[_matronId], _matronId, _sireId);
+        ^--------------------------------------------------------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/KittyBreeding.sol:288:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AutoBirth(_matronId, matron.cooldownEndTime);
+        ^------------------------------------------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/KittyAuction.sol:135:13: Warning: Invoking events without "emit" prefix is deprecated.
+            AutoBirth(_matronId, matron.cooldownEndTime);
+            ^------------------------------------------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/KittyCore.sol:76:9: Warning: Invoking events without "emit" prefix is deprecated.
+        ContractUpgrade(_v2Address);
+        ^-------------------------^
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuction.sol:20:5: Warning: No visibility specified. Defaulting to "public". 
+    function Ownable() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuction.sol:38:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferOwnership(address newOwner) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuction.sol:78:5: Warning: No visibility specified. Defaulting to "public". 
+    function pause() onlyOwner whenNotPaused returns (bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/xcrab/MyWorkspace/ExperimentDapp/experiments/exp2_vulnerability/cryptokitties/v4/contracts/ClockAuction.sol:87:5: Warning: No visibility specified. Defaulting to "public". 
+    function unpause() onlyOwner whenPaused returns (bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+> Artifacts written to /tmp/test-119230-5924-1v1r07u.iret
+> Compiled successfully using:
+   - solc: 0.4.25+commit.59dbf8f1.Emscripten.clang
+
+
+[0m[0m
+[0m  Contract: KittyCore[0m
+[0m    Initial state[0m
+    [32m  ✓[0m[90m should own contract[0m[31m (113ms)[0m
+Gas spent on test suite: 186869360000000000
+
+[0m  Contract: KittyCore[0m
+[0m    Rescue lost kitties[0m
+    [32m  ✓[0m[90m should fail to rescue kitties that aren't owned by the contract[0m[31m (98ms)[0m
+    [32m  ✓[0m[90m should fail to rescue kitties if not coo[0m[31m (84ms)[0m
+    [32m  ✓[0m[90m should be able to rescue kitties that are owned by the contract[0m[31m (100ms)[0m
+Gas spent on test suite: 193619860000000000
+
+[0m  Contract: KittyCore[0m
+[0m    Auction wrapper[0m
+    [32m  ✓[0m[90m non-CEO should fail to set auction addresses[0m[31m (110ms)[0m
+    [32m  ✓[0m[90m CEO should be able to set auction addresses[0m[31m (83ms)[0m
+    [32m  ✓[0m[90m should fail to create sale auction if not cat owner[0m[33m (56ms)[0m
+    [32m  ✓[0m[90m should be able to create sale auction[0m[31m (97ms)[0m
+    [32m  ✓[0m[90m should fail to breed if sire is on sale auction[0m[33m (55ms)[0m
+    [32m  ✓[0m[90m should be able to bid on sale auction[0m[31m (132ms)[0m
+    [32m  ✓[0m[90m should fail to create siring auction if not cat owner[0m[33m (49ms)[0m
+    [32m  ✓[0m[90m should be able to create siring auction[0m[31m (115ms)[0m
+    [32m  ✓[0m[90m should fail to breed if sire is on siring auction[0m[31m (83ms)[0m
+    [32m  ✓[0m[90m should fail to bid on siring auction if matron is in cooldown[0m[31m (171ms)[0m
+    [32m  ✓[0m[90m should be able to bid on siring auction[0m[31m (361ms)[0m
+    [32m  ✓[0m[90m should be able to cancel a sale auction[0m[31m (214ms)[0m
+    [32m  ✓[0m[90m should be able to cancel a siring auction[0m[31m (215ms)[0m
+    [32m  ✓[0m[90m should be able to bid on siring auction with autobirth[0m[31m (263ms)[0m
+Gas spent on test suite: 1287509860000000199
+
+[0m  Contract: KittyCore[0m
+[0m    Gen0 Auction[0m
+    [32m  ✓[0m[90m should fail to create gen0 auction if not coo[0m[31m (76ms)[0m
+    [32m  ✓[0m[90m should start aveSalePrice at 0[0m[33m (42ms)[0m
+    [32m  ✓[0m[90m should be able to create gen0 auction[0m[31m (228ms)[0m
+    [32m  ✓[0m[90m avePrice should be unchanged (no sale yet)[0m[31m (76ms)[0m
+    [32m  ✓[0m[90m should be able to bid on gen0 auction[0m[31m (137ms)[0m
+    [32m  ✓[0m[90m avePrice should be about 1/5 starting price after first sale[0m[33m (39ms)[0m
+    [32m  ✓[0m[90m avePrice should not be influenced by regular auctions[0m[31m (288ms)[0m
+    [32m  ✓[0m[90m next 3 gen0 auctions should be startingPrice[0m[31m (893ms)[0m
+    [32m  ✓[0m[90m gen0 auctions should compute price based on previous sales[0m[31m (117ms)[0m
+Gas spent on test suite: 324634980000000000
+
+[0m  Contract: KittyCore[0m
+[0m    auction withdrawals[0m
+    [32m  ✓[0m[90m should fail to withdraw as non-coo[0m
+Gas spent on test suite: 268395980000220000
+
+[0m  Contract: KittyCore[0m
+[0m    auction withdrawals[0m
+    [32m  ✓[0m[90m should be able to withdraw as coo[0m[31m (197ms)[0m
+Gas spent on test suite: 269612660000220000
+
+[0m  Contract: KittyCore[0m
+[0m    auction withdrawals[0m
+    [32m  ✓[0m[90m should fail to withdraw via core as non-COO[0m
+Gas spent on test suite: 268845360000220000
+
+[0m  Contract: KittyCore[0m
+[0m    auction withdrawals[0m
+    [32m  ✓[0m[90m should be able to withdraw via core as COO[0m[31m (84ms)[0m
+Gas spent on test suite: 269283080000220000
+
+[0m  Contract: KittyCore[0m
+[0m    Kitten creation:[0m
+    [32m  ✓[0m[90m create a promotional kittens[0m[31m (569ms)[0m
+Gas spent on test suite: 197675840000000000
+
+[0m  Contract: KittyCore[0m
+[0m    NonFungible, EIP-721[0m
+    [32m  ✓[0m[90m create a few kittens[0m[31m (316ms)[0m
+    [32m  ✓[0m[90m approve + transferFrom + ownerOf[0m[31m (183ms)[0m
+    [32m  ✓[0m[90m balanceOf[0m[31m (126ms)[0m
+    [32m  ✓[0m[90m tokensOfOwnerByIndex[0m[31m (263ms)[0m
+    [36m  - tokenMetadata[0m
+Gas spent on test suite: 203742940000000000
+
+[0m  Contract: KittyCore[0m
+[0m    Siring[0m
+    [32m  ✓[0m[90m create a few kittens[0m[31m (171ms)[0m
+    [32m  ✓[0m[90m kitten cant sire itself[0m[33m (64ms)[0m
+    [32m  ✓[0m[90m siring is only allowed with due permissions[0m[31m (269ms)[0m
+    [32m  ✓[0m[90m pregnant kitten cant sire[0m[31m (87ms)[0m
+    [32m  ✓[0m[90m sire has cooldown after siring[0m[31m (144ms)[0m
+    [32m  ✓[0m[90m allowed user cant re-use the same sire permission[0m[31m (192ms)[0m
+Gas spent on test suite: 201484740000000000
+
+[0m  Contract: KittyCore[0m
+[0m    Kitty Breeding:[0m
+    [32m  ✓[0m[90m create some kittens[0m[31m (257ms)[0m
+    [32m  ✓[0m[90m kitA gets pregnant from kitB[0m[31m (123ms)[0m
+    [32m  ✓[0m[90m tries and fails to get kitA pregnant again[0m[31m (85ms)[0m
+    [32m  ✓[0m[90m wait kitA be ready to give birth[0m[31m (80ms)[0m
+    [32m  ✓[0m[90m have kitA give birth to kitD[0m[31m (222ms)[0m
+    [32m  ✓[0m[90m kitD can breed right after being born[0m[33m (38ms)[0m
+    [32m  ✓[0m[90m kitD can't breed with either parent, but can breed with kitC, who is unrelated[0m[31m (580ms)[0m
+    [32m  ✓[0m[90m test that siblings cant breed[0m[31m (577ms)[0m
+    [32m  ✓[0m[90m test breedWithAuto still retains the same requirements[0m[31m (225ms)[0m
+    [32m  ✓[0m[90m make breedWithAuto happen and check event[0m[31m (677ms)[0m
+    [32m  ✓[0m[90m test that anyone can give birth to a kitten[0m[31m (116ms)[0m
+Gas spent on test suite: 214318860000000000
+
+[0m  Contract: KittyCore[0m
+[0m    Cooldowns progression[0m
+    [32m  ✓[0m[90m create some kittens[0m[31m (128ms)[0m
+    [32m  ✓[0m[90m Let them breed and give birth[0m[31m (323ms)[0m
+    [32m  ✓[0m[90m KitA can breed again right away[0m[31m (307ms)[0m
+    [32m  ✓[0m[90m KitB now will be the one pregnant[0m[31m (178ms)[0m
+    [32m  ✓[0m[90m After reaching the limit it stops at max cooldown[0m[31m (1778ms)[0m
+Gas spent on test suite: 241845800000000000
+
+[0m  Contract: KittyCore[0m
+[0m    Roles: CEO + CFO[0m
+    [32m  ✓[0m[90m COO try to appoint another COO, but cant[0m[31m (76ms)[0m
+    [32m  ✓[0m[90m CEO can appoint a CFO[0m[31m (121ms)[0m
+    [32m  ✓[0m[90m CEO can appoint another coo[0m[33m (53ms)[0m
+    [32m  ✓[0m[90m new coo can do things, old coo cant anymore[0m[31m (164ms)[0m
+    [32m  ✓[0m[90m CEO can appoint another CEO[0m[31m (120ms)[0m
+    [32m  ✓[0m[90m old CEO cant do anything since they were replaced[0m[31m (126ms)[0m
+    [32m  ✓[0m[90m CFO can drain funds[0m[31m (107ms)[0m
+Gas spent on test suite: 195236120000000000
+
+[0m  Contract: KittyCore[0m
+[0m    Contract Upgrade[0m
+    [32m  ✓[0m[90m user2 fails to pause contract - not coo[0m[33m (49ms)[0m
+    [32m  ✓[0m[90m coo can pause the contract[0m[33m (56ms)[0m
+    [32m  ✓[0m[90m functions that alter state can't execute while paused[0m[31m (151ms)[0m
+    [32m  ✓[0m[90m can read state of all kittens while paused[0m[33m (46ms)[0m
+    [32m  ✓[0m[90m unpause[0m[33m (71ms)[0m
+    [32m  ✓[0m[90m kitten 1 give birth[0m[31m (99ms)[0m
+    [32m  ✓[0m[90m set new contract address[0m[31m (322ms)[0m
+Gas spent on test suite: 318881220000000000
+
+[0m  Contract: KittyCore[0m
+[0m    sub contracts[0m
+    [32m  ✓[0m[90m can't assign an address that isnt Breeding to breeding[0m[31m (85ms)[0m
+    [32m  ✓[0m[90m can't assign an address that isnt Breeding to breeding 2[0m[33m (63ms)[0m
+    [32m  ✓[0m[90m can't assign an address that isnt Breeding to breeding 3[0m[33m (63ms)[0m
+    [32m  ✓[0m[90m can set a valid breeding contract[0m[31m (426ms)[0m
+    [32m  ✓[0m[90m everything still works with new breeding contract[0m[31m (263ms)[0m
+Gas spent on test suite: 208489340000000000
+
+[0m  Contract: KittyCore[0m
+[0m    auction withdrawals[0m
+deploying contract0x28be9F2B4b30a01B81d2Af9d824643d1eFCa2e82
+    [31m  1) send to core direct[0m
+
+    Events emitted during test:
+    ---------------------------
+
+    Birth(owner: <indexed> 0x0000000000000000000000000000000000000000 (address), kittyId: 0 (uint256), matronId: 0 (uint256), sireId: 0 (uint256), genes: 115792089237316195423570985008687907853269984665640564039457584007913129639935 (uint256))
+    Transfer(from: <indexed> 0x0000000000000000000000000000000000000000 (address), to: <indexed> 0x0000000000000000000000000000000000000000 (address), tokenId: <indexed> 0 (uint256))
+    Birth(owner: <indexed> 0xDA7f992aDf4ad6389D4dE1Dd616017Fa71EC872D (address), kittyId: 1 (uint256), matronId: 0 (uint256), sireId: 0 (uint256), genes: 1 (uint256))
+    Transfer(from: <indexed> 0x0000000000000000000000000000000000000000 (address), to: <indexed> 0xDA7f992aDf4ad6389D4dE1Dd616017Fa71EC872D (address), tokenId: <indexed> 1 (uint256))
+    Birth(owner: <indexed> 0xDA7f992aDf4ad6389D4dE1Dd616017Fa71EC872D (address), kittyId: 2 (uint256), matronId: 0 (uint256), sireId: 0 (uint256), genes: 1 (uint256))
+    Transfer(from: <indexed> 0x0000000000000000000000000000000000000000 (address), to: <indexed> 0xDA7f992aDf4ad6389D4dE1Dd616017Fa71EC872D (address), tokenId: <indexed> 2 (uint256))
+    Transfer(from: <indexed> 0xDA7f992aDf4ad6389D4dE1Dd616017Fa71EC872D (address), to: <indexed> 0xC7cDF6f97AC054e118477EF47E48DAF073d54D95 (address), tokenId: <indexed> 1 (uint256))
+    AuctionCreated(tokenId: 1 (uint256), startingPrice: 100000 (uint256), endingPrice: 200000 (uint256), duration: 100 (uint256))
+    AuctionSuccessful(tokenId: 1 (uint256), totalPrice: 100000 (uint256), winner: 0xFe10AAD2D6B3E608Fa170Ca0674B25f0051F71CE (address))
+    Transfer(from: <indexed> 0xC7cDF6f97AC054e118477EF47E48DAF073d54D95 (address), to: <indexed> 0xFe10AAD2D6B3E608Fa170Ca0674B25f0051F71CE (address), tokenId: <indexed> 1 (uint256))
+    Transfer(from: <indexed> 0xFe10AAD2D6B3E608Fa170Ca0674B25f0051F71CE (address), to: <indexed> 0x74A4429B7ACcEeFda54225EF98CbEe1D2595c6A0 (address), tokenId: <indexed> 1 (uint256))
+    AuctionCreated(tokenId: 1 (uint256), startingPrice: 100000 (uint256), endingPrice: 200000 (uint256), duration: 100 (uint256))
+    AuctionSuccessful(tokenId: 1 (uint256), totalPrice: 100000 (uint256), winner: 0x28be9F2B4b30a01B81d2Af9d824643d1eFCa2e82 (address))
+    Transfer(from: <indexed> 0x74A4429B7ACcEeFda54225EF98CbEe1D2595c6A0 (address), to: <indexed> 0xFe10AAD2D6B3E608Fa170Ca0674B25f0051F71CE (address), tokenId: <indexed> 1 (uint256))
+    Pregnant(owner: 0xDA7f992aDf4ad6389D4dE1Dd616017Fa71EC872D (address), matronId: 2 (uint256), sireId: 1 (uint256))
+
+    ---------------------------
+Gas spent on test suite: 268827900000220000
+
+
+[92m [0m[32m 77 passing[0m[90m (49s)[0m
+[36m [0m[36m 1 pending[0m
+[31m  1 failing[0m
+
+[0m  1) Contract: KittyCore
+       auction withdrawals
+         send to core direct:
+[0m[31m     Error: Returned error: VM Exception while processing transaction: revert[0m[90m
+      at Object.ErrorResponse (/usr/local/lib/node_modules/truffle/build/webpack:/~/web3-eth/~/web3-core-helpers/src/errors.js:29:1)
+      at /usr/local/lib/node_modules/truffle/build/webpack:/~/web3-eth/~/web3-core-requestmanager/src/index.js:140:1
+      at /usr/local/lib/node_modules/truffle/build/webpack:/packages/truffle-provider/wrapper.js:112:1
+      at XMLHttpRequest.request.onreadystatechange (/usr/local/lib/node_modules/truffle/build/webpack:/~/web3/~/web3-providers-http/src/index.js:96:1)
+      at XMLHttpRequestEventTarget.dispatchEvent (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2-cookies/dist/xml-http-request-event-target.js:34:1)
+      at XMLHttpRequest._setReadyState (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2-cookies/dist/xml-http-request.js:208:1)
+      at XMLHttpRequest._onHttpResponseEnd (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2-cookies/dist/xml-http-request.js:318:1)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2-cookies/dist/xml-http-request.js:289:47)
+      at endReadableNT (_stream_readable.js:1129:12)
+      at processTicksAndRejections (internal/process/next_tick.js:76:17)
+[0m
+
+
